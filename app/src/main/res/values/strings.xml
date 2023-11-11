@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Iks-Oks</string>
+
+    <string name="text_view_title">Iks-Oks</string>
+    <string name="text_view_player_x">X</string>
+    <string name="text_view_player_o">O</string>
+    <string name="text_view_player_x_score">0</string>
+    <string name="text_view_player_o_score">0</string>
+    <string name="text_view_game_history">Istorija</string>
+    <string name="text_view_progress_title">Čekanje</string>
+    <string name="text_view_progress_text">Podaci se učitavaju</string>
+    <string name="text_view_exit">Vrati se na glavni meni?</string>
+    <string name="text_view_option_title">Opcije</string>
+    <string name="edit_text_filter">Filtriraj prikaz</string>
+
+    <string name="button_play">Igraj</string>
+    <string name="button_play_again">Nastavi igru</string>
+    <string name="button_end_game_session">Završi igru</string>
+    <string name="button_game_history">Istorija</string>
+    <string name="button_back">Nazad</string>
+    <string name="button_delete">Izbriši</string>
+    <string name="buttonFilter">Filtriraj</string>
+    <string name="button_leave_game">Izađi</string>
+    <string name="button_back_to_menu">Da</string>
+    <string name="button_stay">Ne</string>
+</resources>

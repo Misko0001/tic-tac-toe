@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    tools:context=".GameHistoryActivity">
+
+    <TextView
+        android:id="@+id/textViewGameHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/text_view_game_history"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextFilter"
+            android:layout_width="209dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:digits="0123456789"
+            android:ems="10"
+            android:hint="@string/edit_text_filter"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/buttonFilter"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/buttonFilter"
+            android:textSize="18sp"
+            android:textColor="@color/black2"
+            android:textStyle="bold"
+            app:backgroundTint="@color/blue" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewGameHistory"
+        android:layout_width="match_parent"
+        android:layout_height="636dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="25dp"
+        android:divider="@null"
+        tools:listitem="@layout/game_history_item"/>
+
+
+</LinearLayout>

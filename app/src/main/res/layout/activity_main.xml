@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/text_view_title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp"
+        android:text="@string/button_play"
+        android:textColor="@color/black2"
+        android:textSize="20sp"
+        app:backgroundTint="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitle"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonGameHistory"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/button_game_history"
+        android:textColor="@color/black2"
+        android:textSize="20sp"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPlay"
+        app:layout_constraintStart_toStartOf="@+id/buttonPlay"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlay"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonLeaveGame"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/button_leave_game"
+        android:textSize="20sp"
+        android:textColor="@color/black2"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGameHistory"
+        app:layout_constraintStart_toStartOf="@+id/buttonGameHistory"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGameHistory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

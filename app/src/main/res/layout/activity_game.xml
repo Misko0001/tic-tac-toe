@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/textViewPlayerX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/text_view_player_x"
+        android:textSize="80sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPlayerO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/text_view_player_o"
+        android:textColor="@color/grey"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPlayerXScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/text_view_player_x_score"
+        android:textSize="35sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPlayerX"
+        app:layout_constraintStart_toEndOf="@+id/textViewPlayerX"
+        app:layout_constraintTop_toTopOf="@+id/textViewPlayerX" />
+
+    <TextView
+        android:id="@+id/textViewPlayerOScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/text_view_player_o_score"
+        android:textColor="@color/grey"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPlayerO"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPlayerO"
+        app:layout_constraintTop_toTopOf="@+id/textViewPlayerO" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonField0"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/empty"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonField1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@id/imageButtonField0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/empty"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonField2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@id/imageButtonField1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/empty"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonField3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageButtonField0"
+            app:srcCompat="@drawable/empty"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonField4"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@id/imageButtonField3"
+            app:layout_constraintTop_toBottomOf="@id/imageButtonField1"
+            app:srcCompat="@drawable/empty"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonField5"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@id/imageButtonField4"
+            app:layout_constraintTop_toBottomOf="@id/imageButtonField2"
+            app:srcCompat="@drawable/empty"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonField6"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageButtonField3"
+            app:srcCompat="@drawable/empty"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonField7"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@id/imageButtonField6"
+            app:layout_constraintTop_toBottomOf="@id/imageButtonField4"
+            app:srcCompat="@drawable/empty"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonField8"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@id/imageButtonField7"
+            app:layout_constraintTop_toBottomOf="@id/imageButtonField5"
+            app:srcCompat="@drawable/empty"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
