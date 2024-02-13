@@ -35,7 +35,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private int playerOScore;
     private int turn;
     private int round;
-    int[] table = {0, 0, 0, 0, 0, 0, 0, 0, 0};  // prazno = 0, X = 1, O = 2
+    int[] table = {0, 0, 0, 0, 0, 0, 0, 0, 0};  // empty = 0, X = 1, O = 2
     private boolean gameSaved;
 
     private FirebaseDatabase database;
@@ -80,7 +80,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initDatabaseComponents() {
-        database = FirebaseDatabase.getInstance("https://iks-oks-8eecc-default-rtdb.europe-west1.firebasedatabase.app/");
+        database = FirebaseDatabase.getInstance();
         ref = database.getReference().child("GameSession");
         gameSession = new GameSession();
         sessionId = 0;
